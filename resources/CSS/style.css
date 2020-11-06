@@ -1,0 +1,348 @@
+/* --------- BASIC SETUP --------- */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #ecf0f1;
+}
+
+h2:after {
+    display: block;
+    height: 3px;
+    background: linear-gradient(20deg, #74b9ff 50%, #3498db 50%);
+    content: " ";
+    width: 120px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h2 {
+    font-weight: 100;
+    font-family: 'Lato';
+    font-size: 4.5rem;
+    margin-bottom: 5%;
+    text-transform: uppercase;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+
+/* --------------- title --------------- */
+
+#title {
+    background: linear-gradient( #0984e3, #0b8ef1);
+    height: 97%;
+}
+
+#title .container-fluid {
+    padding: 2% 13% 0;
+}
+
+
+/* ----- Button ----- */
+
+.button-Contact {
+    margin-top: 3%;
+    margin-bottom: 7%;
+    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
+    padding: 10px 30px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px #b2bec3;
+    border-radius: 10px;
+}
+
+.button-Contact:hover {
+    background-position: right center;
+    border-radius: 20px;
+}
+
+
+/* ----- NavBar ----- */
+
+.nav-link {
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 1.5rem;
+    font-family: 'Patrick Hand SC';
+}
+
+nav,
+.title-container {
+    z-index: 1;
+}
+
+nav {
+    margin-top: -5%;
+}
+
+
+/* --------------- Containers --------------- */
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+
+/* --------------- Headings --------------- */
+
+.big-heading {
+    font-family: 'Patrick Hand SC';
+    font-size: 5rem;
+    margin: 3% auto;
+    color: #eee;
+}
+
+.section-heading {
+    color: #fff;
+}
+
+.Small-heading {
+    font-size: 1.5rem;
+    color: #ced7db;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    font-weight: 300;
+    font-family: 'Lato';
+}
+
+
+/* --------------- ANIMATIONS --------------- */
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+
+/* --------------- About section --------------- */
+
+.website-avatar {
+    border-radius: 100%;
+    background-color: #74b9ff;
+    margin-top: 2%;
+}
+
+.About-text {
+    font-weight: 100;
+    color: #2d3436;
+    margin: 5% 18% 0;
+    line-height: 2;
+    font-size: 20px;
+}
+
+
+/* --------------- SKILLS Section --------------- */
+
+#Skills {
+    background: linear-gradient(30deg, #74b9ff 15%, #0984e3 15% 75%, #3498db 75%);
+    background-attachment: fixed;
+}
+
+.in-skills-heading {
+    font-weight: 100;
+    font-size: 2.2rem;
+    color: #34495e;
+    margin-top: 5%;
+}
+
+.skills-list {
+    list-style: none;
+    margin: 10%;
+    padding: 0;
+}
+
+.skills-list li {
+    font-size: 19px;
+    color: rgb(236, 236, 236);
+}
+
+.skills-list li::after {
+    display: block;
+    height: 3px;
+    background: linear-gradient(20deg, #2c3e50 50%, #95a5a6 50%);
+    content: " ";
+    width: 120px;
+    margin: 0 auto 10%;
+    margin-top: 30px;
+}
+
+
+/* --------------- CONTACT section --------------- */
+
+.contact-heading {
+    color: #000;
+}
+
+.in-contact-heading {
+    font-size: 2rem;
+}
+
+.contact-text {
+    margin: 8% 18% 4%;
+    font-weight: 100;
+    line-height: 2;
+    font-size: 20px;
+}
+
+.contact-text span {
+    color: #34495e;
+    font-weight: 500;
+    text-align: left;
+}
+
+#Contact .button-Contact {
+    margin-bottom: 0;
+}
+
+
+/* --------------- FOOTER --------------- */
+
+footer {
+    background-color: #95a5a6;
+    padding: 2% 10% 3%;
+}
+
+.social-icons {
+    color: #2d3436;
+    margin: auto 1%;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.instagram:hover {
+    color: #e4405f;
+}
+
+.pinterest:hover {
+    color: #bd081c;
+}
+
+.twitter:hover {
+    color: #55acee;
+}
+
+.whatsapp:hover {
+    color: #25D366;
+}
+
+.mail {
+    margin: 4% auto 0;
+    color: #e4e6e6;
+}
+
+.mail:hover {
+    color: #410093;
+}

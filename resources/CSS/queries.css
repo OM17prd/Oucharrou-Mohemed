@@ -1,0 +1,121 @@
+/* Big tablet to 1200px (widths smaller taht the 1140px row) */
+
+@media only screen and (max-width: 1200px) {}
+
+
+/* Small tablet to big tablet: from 768px to 1023px */
+
+@media only screen and (max-width: 1125px) {
+    #title {
+        height: 110%;
+    }
+    .big-heading {
+        margin-top: 10%;
+    }
+    .small-heading {
+        margin: 10% auto;
+    }
+    .container-fluid {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+
+
+/* Small phones to small tablets: from 481px to 767px */
+
+@media only screen and (max-width: 991px) {
+    #title {
+        height: 135%;
+    }
+    #title .container-fluid {
+        padding: 1% 4%;
+    }
+    .container-fluid {
+        padding: 17% 2%;
+    }
+    .big-heading {
+        font-size: 5rem;
+        margin-top: 5%;
+    }
+    .small-heading {
+        margin-top: 15%;
+        margin-bottom: 13%;
+    }
+    .About-text {
+        margin: 5% 8% 0;
+        line-height: 2;
+        font-size: 20px;
+    }
+    .contact-text {
+        margin: 8% 8% 4%;
+    }
+    .circles {
+        position: absolute;
+        top: -18;
+        left: 0;
+        width: 100%;
+        height: 130%;
+        overflow: hidden;
+    }
+    .circles li {
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        animation: animate 25s linear infinite;
+        bottom: -200px;
+    }
+    .skills-list li::after {
+        width: 200px;
+    }
+}
+
+
+/* Small phones: from 0 to 480px */
+
+@media only screen and (max-width: 480px) {
+    #title {
+        height: 135%;
+    }
+    .container-fluid {
+        padding: 17% 0;
+    }
+    .col {
+        padding: 0;
+    }
+    .section-heading,
+    .contact-heading {
+        font-size: 3.8rem;
+        line-height: 1.5;
+    }
+    .in-contact-heading {
+        font-size: 1.5rem;
+        margin-top: 10%;
+    }
+    .button-Contact {
+        padding: 12px;
+    }
+    nav {
+        position: absolute;
+        top: -30;
+        padding: 0;
+    }
+    .big-heading {
+        margin: 0;
+        position: relative;
+        top: -40;
+    }
+    .skills-list li::after {
+        width: 200px;
+    }
+    footer {
+        padding: 6% 10%;
+    }
+    .social-icons {
+        color: #2d3436;
+        margin: 0 3% 5%;
+    }
+}
